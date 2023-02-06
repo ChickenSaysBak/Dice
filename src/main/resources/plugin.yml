@@ -1,0 +1,15 @@
+name: Dice
+author: ChickenSaysBak
+description: A simple dice rolling plugin!
+version: ${project.version}
+api-version: 1.16
+main: me.chickensaysbak.dice.Dice
+commands:
+  roll:
+    aliases: [dice]
+    description: Rolls the specified amount of dice.
+    usage: /roll [amount]
+  diceplugin:
+    description: Admin command for reloading the Dice plugin.
+    usage: /diceplugin reload
+    permission: dice.admin

@@ -1,0 +1,18 @@
+# ============================================= #
+#              Dice Configuration               #
+#              By: ChickenSaysBak               #
+#                                               #
+# To reload, use /diceplugin reload             #
+#                                               #
+# Permissions:                                  #
+# - dice.admin (to use /diceplugin)             #
+# ============================================= #
+
+# Set how long in seconds a player must wait before rolling again.
+cooldown: 10
+
+# The maximum amount of dice that can be rolled at a time.
+maximum: 12
+
+# The minimum amount of dice that can be rolled at a time.
+minimum: 1
