@@ -3,7 +3,7 @@ author: ChickenSaysBak
 description: A simple dice rolling plugin!
 version: ${project.version}
 api-version: 1.16
-main: me.chickensaysbak.dice.Dice
+main: me.chickensaysbak.dice.core.Dice
 commands:
   roll:
     aliases: [dice]
