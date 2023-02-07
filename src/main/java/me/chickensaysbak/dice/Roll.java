@@ -16,7 +16,7 @@ public class Roll {
         for (int i = 0; i < amount; ++i) {
             DiceSide side = SIDES[new Random().nextInt(SIDES.length)];
             total += side.getValue();
-            dice += side + " ";
+            dice += side + (i < amount-1 ? " " : "");
         }
 
     }
