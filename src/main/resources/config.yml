@@ -5,6 +5,7 @@
 # To reload, use /diceplugin reload             #
 #                                               #
 # Permissions:                                  #
+# - dice.use (to use /roll)                     #
 # - dice.admin (to use /diceplugin)             #
 # ============================================= #
 

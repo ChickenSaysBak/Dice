@@ -9,6 +9,7 @@ commands:
     aliases: [dice]
     description: Rolls the specified amount of dice.
     usage: /roll [amount]
+    permission: dice.use
   diceplugin:
     description: Admin command for reloading the Dice plugin.
     usage: /diceplugin reload
