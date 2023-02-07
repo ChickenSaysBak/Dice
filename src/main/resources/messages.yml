@@ -5,14 +5,9 @@ roll: "&7%player% rolled &f%dice% &7(&f%total%&7)"
 roll_usage: "&cUsage: /roll [amount]"
 error_maximum: "&cThe amount cannot be greater than %maximum%!"
 error_minimum: "&cThe amount cannot be less than %minimum%!"
-error_cooldown: "&cYou must wait %remaining% %seconds% to roll again!"
+error_cooldown: "&cYou must wait %remaining% second%s% to roll again!"
 error_no_permission: "&cYou do not have permission to use that command!"
 
 # Seen by admins
 reload_config: "&aSuccessfully reloaded Dice!"
 diceplugin_usage: "&cUsage: /diceplugin reload"
-
-# Conditional variables
-seconds:
-  singular: "second"
-  plural: "seconds"
