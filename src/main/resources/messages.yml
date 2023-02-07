@@ -6,7 +6,6 @@ roll_usage: "&cUsage: /roll [amount]"
 error_maximum: "&cThe amount cannot be greater than %maximum%!"
 error_minimum: "&cThe amount cannot be less than %minimum%!"
 error_cooldown: "&cYou must wait %remaining% second%s% to roll again!"
-error_no_permission: "&cYou do not have permission to use that command!"
 
 # Seen by admins
 reload_config: "&aSuccessfully reloaded Dice!"
