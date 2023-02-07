@@ -9,6 +9,7 @@
     <packaging>jar</packaging>
 
     <name>Dice</name>
+    <url>https://www.spigotmc.org/resources/dice.107888/</url>
     <inceptionYear>2023</inceptionYear>
     <licenses>
         <license>

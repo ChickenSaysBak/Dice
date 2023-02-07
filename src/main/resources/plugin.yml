@@ -1,5 +1,6 @@
 name: Dice
 author: ChickenSaysBak
+website: https://www.spigotmc.org/resources/dice.107888/
 description: A simple dice rolling plugin!
 version: ${project.version}
 api-version: 1.16
