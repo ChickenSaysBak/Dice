@@ -4,18 +4,21 @@ package me.chickensaysbak.dice.core;
 
 import me.chickensaysbak.dice.core.commands.DicePluginCommand;
 import me.chickensaysbak.dice.core.commands.RollCommand;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Dice extends JavaPlugin {
 
     private static Dice instance;
+    private Metrics metrics;
     private Settings settings;
 
     @Override
     public void onEnable() {
 
         instance = this;
+        metrics = new Metrics(this, 17667);
         settings = new Settings();
 
         getCommand("diceplugin").setExecutor(new DicePluginCommand());
@@ -58,12 +61,8 @@ public class Dice extends JavaPlugin {
 
     }
 
-    public static Dice getInstance() {
-        return instance;
-    }
-
-    public Settings getSettings() {
-        return settings;
-    }
+    public static Dice getInstance() {return instance;}
+    public Metrics getMetrics() {return metrics;}
+    public Settings getSettings() {return settings;}
 
 }

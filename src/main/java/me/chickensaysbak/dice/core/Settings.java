@@ -2,6 +2,8 @@
 // This code is licensed under MIT license (see LICENSE file for details).
 package me.chickensaysbak.dice.core;
 
+import org.bstats.bukkit.Metrics;
+import org.bstats.charts.SimplePie;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.*;
@@ -49,6 +51,12 @@ public class Settings {
         YamlConfiguration messages = YamlConfiguration.loadConfiguration(messagesFile);
         msgs.clear();
         for (String key : messages.getKeys(false)) msgs.put(key, messages.getString(key));
+
+        Metrics metrics = Dice.getInstance().getMetrics();
+        metrics.addCustomChart(new SimplePie("cooldowns", () -> String.valueOf(cooldown)));
+        metrics.addCustomChart(new SimplePie("default_amount", () -> String.valueOf(defaultAmount)));
+        metrics.addCustomChart(new SimplePie("maximum", () -> String.valueOf(maximum)));
+        metrics.addCustomChart(new SimplePie("minimum", () -> String.valueOf(minimum)));
 
     }
 
