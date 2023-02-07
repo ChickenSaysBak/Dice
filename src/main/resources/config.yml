@@ -12,6 +12,9 @@
 # Set how long in seconds a player must wait before rolling again.
 cooldown: 10
 
+# The amount of dice rolled if no amount is specified.
+default_amount: 2
+
 # The maximum amount of dice that can be rolled at a time.
 maximum: 12
 

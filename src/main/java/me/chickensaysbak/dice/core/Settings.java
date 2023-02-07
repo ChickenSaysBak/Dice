@@ -13,6 +13,7 @@ public class Settings {
     // Config fields
     private File configFile;
     private int cooldown;
+    private int defaultAmount;
     private int maximum;
     private int minimum;
 
@@ -41,6 +42,7 @@ public class Settings {
 
         YamlConfiguration config = YamlConfiguration.loadConfiguration(configFile);
         cooldown = config.getInt("cooldown", 10);
+        defaultAmount = config.getInt("default_amount", 2);
         maximum = config.getInt("maximum", 12);
         minimum = config.getInt("minimum", 1);
 
@@ -51,6 +53,7 @@ public class Settings {
     }
 
     public int getCooldown() {return cooldown;}
+    public int getDefaultAmount() {return defaultAmount;}
     public int getMaximum() {return maximum;}
     public int getMinimum() {return minimum;}
 

@@ -20,6 +20,7 @@ public class RollCommand implements CommandExecutor {
 
         Dice plugin = Dice.getInstance();
         int cooldown = plugin.getSettings().getCooldown();
+        int defaultAmount = plugin.getSettings().getDefaultAmount();
         int maximum = plugin.getSettings().getMaximum();
         int minimum = plugin.getSettings().getMinimum();
 
@@ -34,7 +35,7 @@ public class RollCommand implements CommandExecutor {
         int amount;
 
         try {
-            amount = args.length >= 1 ? Integer.parseInt(args[0]) : 2;
+            amount = args.length >= 1 ? Integer.parseInt(args[0]) : defaultAmount;
         } catch (NumberFormatException e) {
             sender.sendMessage(plugin.formatUIMessage("roll_usage"));
             return true;
