@@ -24,10 +24,10 @@ public class RollCommand implements CommandExecutor {
         int maximum = plugin.getSettings().getMaximum();
         int minimum = plugin.getSettings().getMinimum();
 
-        int lastRollSeconds = (int) (System.currentTimeMillis() - lastRoll.getOrDefault(sender.getName(), 0L))/1000;
+        long lastRollSeconds = (System.currentTimeMillis() - lastRoll.getOrDefault(sender.getName(), 0L))/1000;
 
         if (lastRollSeconds < cooldown) {
-            int remaining = cooldown-lastRollSeconds;
+            int remaining = (int) (cooldown-lastRollSeconds);
             sender.sendMessage(plugin.formatUIMessage("error_cooldown", String.valueOf(remaining), remaining == 1 ? "" : "s"));
             return true;
         }
